@@ -5,7 +5,7 @@ This repository contains project type and toolchain definitions used by Anvil.
 The registry is composed of two primary concepts:
 
 - Project Types: Describes how a project is identified.
-- Toolchains: Describes how a project is created
+- Toolchains: Describes how a project is created.
 
 ---
 
