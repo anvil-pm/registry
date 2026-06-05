@@ -1,0 +1,25 @@
+[registry]
+version = "1"
+updated_at = "2026-06-05"
+
+[[project_types]]
+id = "rust"
+name = "Rust"
+version = "0.0.1"
+file = "project-types/rust.toml"
+sha256 = "4f73c50927a32ccffc8840caddc82d2b63c54da27f3980640c365f4bd1105668"
+
+[[toolchains]]
+id = "rust-workspace"
+name = "Rust Workspace"
+version = "0.0.1"
+project_type = "rust"
+description = "Cargo workspace with a crates/ directory and an initial library"
+
+[[toolchains.files]]
+path = "toolchains/rust-workspace/templates/workspace-root.toml"
+sha256 = "3435afac4d68dae74452b74957e5da833705c0bf652e4db07be1e262fdeeec7e"
+
+[[toolchains.files]]
+path = "toolchains/rust-workspace/toolchain.toml"
+sha256 = "b587018e41d98bc0b190751bb087185e974f1c8250a87a2b9b90d7f5120ee9f9"
