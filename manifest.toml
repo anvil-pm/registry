@@ -3,6 +3,13 @@ version = "1"
 updated_at = "2026-06-05"
 
 [[project_types]]
+id = "golang"
+name = "Go"
+version = "0.0.1"
+file = "project-types/golang.toml"
+sha256 = "363a41b3ebc7653261c1db67be401860619cbbd72dcfadf815d69b7a438182e5"
+
+[[project_types]]
 id = "node"
 name = "Node"
 version = "0.0.1"
