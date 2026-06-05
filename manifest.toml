@@ -30,3 +30,13 @@ sha256 = "3435afac4d68dae74452b74957e5da833705c0bf652e4db07be1e262fdeeec7e"
 [[toolchains.files]]
 path = "toolchains/rust-workspace/toolchain.toml"
 sha256 = "b587018e41d98bc0b190751bb087185e974f1c8250a87a2b9b90d7f5120ee9f9"
+
+[[toolchains]]
+id = "vite-react-ts"
+name = "Vite + React + TypeScript"
+version = "0.0.1"
+project_type = "node"
+
+[[toolchains.files]]
+path = "toolchains/vite-react-ts/toolchain.toml"
+sha256 = "4693bb2fe5e3fb684ddfee068cac666eb8a0f2791d321fabb7400a39a908648c"
