@@ -1,0 +1,25 @@
+[toolchain]
+id = "rust-workspace"
+name = "Rust Workspace"
+description = "Cargo workspace with a crates/ directory and an initial library"
+project_type = "rust"
+version = "0.0.1"
+auto_git_init = true
+
+[[toolchain.steps]]
+type = "create_file"
+path = "Cargo.toml"
+template = "workspace-root.toml"
+
+[[toolchain.steps]]
+type = "create_directory"
+path = "crates"
+
+[[toolchain.steps]]
+type = "run_command"
+description = "Create initial library crate"
+command = "cargo new --lib --vcs none crates/{project_name}-core"
+
+[[toolchain.steps]]
+type = "git_init"
+gitignore_template = "Rust"
