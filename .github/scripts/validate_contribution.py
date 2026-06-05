@@ -78,7 +78,7 @@ def validate_toolchain(path: Path):
     if step.get("type") == "create_file" and "template" in step:
       template = path.parent / "templates" / step["template"]
 
-      if not template.exist():
+      if not template.exists():
         fail(f"{path}: template '{step['template']}' does not exist")
 
 
