@@ -110,7 +110,6 @@ required = true
 type = "run_command"
 description = "Scaffold Vite project"
 command = "{package_manager} create vite@latest --yes . -- --name {project_name} --template react-ts --no-interactive"
-working_dir = "{parent_dir}"
 
 [[toolchain.steps]]
 type = "run_command"
