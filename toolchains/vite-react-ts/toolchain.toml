@@ -1,0 +1,22 @@
+[toolchain]
+id = "vite-react-ts"
+name = "Vite + React + TypeScript"
+project_type = "node"
+version = "0.0.1"
+
+[[toolchain.params]]
+name = "package_manager"
+label = "Package Manager"
+options = ["npm", "pnpm", "yarn", "bun"]
+default = "npm"
+required = true
+
+[[toolchain.steps]]
+type = "run_command"
+description = "Scaffold Vite project"
+command = "{package_manager} create vite@latest --yes . -- --name {project_name} --template react-ts --no-interactive"
+
+[[toolchain.steps]]
+type = "run_command"
+description = "Install dependencies"
+command = "{package_manager} install"
