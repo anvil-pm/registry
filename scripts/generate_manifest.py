@@ -28,7 +28,7 @@ for file in sorted((ROOT / "project-types").glob("*.toml")):
   with open(file, "rb") as f:
     data = tomllib.load(f)
 
-  project_type = data["project-type"]
+  project_type = data["project_type"]
 
   entry = tomlkit.table()
   entry["id"] = project_type["id"]

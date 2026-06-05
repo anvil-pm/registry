@@ -1,4 +1,4 @@
-[project-type]
+[project_type]
 id = "rust"
 name = "Rust"
 color = "#dea584"

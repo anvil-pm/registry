@@ -1,4 +1,4 @@
-[project-type]
+[project_type]
 id = "node"
 name = "Node"
 color = "#f1e05a"
