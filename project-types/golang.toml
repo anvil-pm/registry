@@ -1,0 +1,7 @@
+[project_type]
+id = "golang"
+name = "Go"
+color = "#00add8"
+version = "0.0.1"
+
+markers = [{ path = "go.mod", kind = "file" }]
