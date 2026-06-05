@@ -1,0 +1,7 @@
+[project-type]
+id = "node"
+name = "Node"
+color = "#f1e05a"
+version = "0.0.1"
+
+markers = [{ path = "package.json", kind = "file" }]
