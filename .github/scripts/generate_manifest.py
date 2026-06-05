@@ -15,7 +15,7 @@ def sha256_file(path):
   return hasher.hexdigest()
 
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 
 manifest = tomlkit.document()
 
