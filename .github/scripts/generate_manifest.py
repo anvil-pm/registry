@@ -4,6 +4,7 @@ import tomllib
 import tomlkit
 import hashlib
 
+
 def sha256_file(path):
   hasher = hashlib.sha256()
 
@@ -12,6 +13,7 @@ def sha256_file(path):
       hasher.update(chunk)
 
   return hasher.hexdigest()
+
 
 ROOT = Path(__file__).parent.parent
 
