@@ -1,0 +1,74 @@
+name: Registry Contribution
+description: Submit a project type or toolchain to the registry.
+title: "[Contribution]: "
+labels: []
+
+body:
+  - type: dropdown
+    id: contribution_type
+    attributes:
+    label: Contribution Type
+    description: Select the type of registry entry being contributed.
+    options:
+      - Project Type
+      - Toolchain
+    validations:
+    required: true
+
+  - type: input
+    id: entry_id
+    attributes:
+    label: Registry Entry ID
+    description: The ID of the project type or toolchain.
+    placeholder: vite-react-ts
+    validations:
+    required: true
+
+  - type: input
+    id: version
+    attributes:
+    label: Version
+    description: Version contained in the contributed TOML file.
+    placeholder: 0.0.1
+    validations:
+    required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+    label: Summary
+    description: Describe what this contribution adds or changes.
+    placeholder: Adds a Vite + React + TypeScript toolchain.
+    validations:
+    required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+    label: Testing
+    description: Describe how the contribution was validated.
+    placeholder:
+      - Created a project locally
+      - Verified generated files
+      - Confirmed commands succeed validations
+    required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+    label: Contributor Checklist
+    options:
+      - label: This pull request modifies exactly one registry entry
+        required: true
+
+      - label: This pull request only modifies project types or toolchains, not both
+        required: true
+
+      - label: The version was incremented if updating an existing entry
+        required: true
+
+      - label: The contribution was tested locally
+        required: true
+
+      - label: No unrelated files were modified
+        required: true
