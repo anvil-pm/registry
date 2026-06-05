@@ -4,6 +4,4 @@ name = "Rust"
 color = "#dea584"
 version = "0.0.1"
 
-markers = [
-  { path = "Cargo.toml", kind = "file" },
-]
+markers = [{ path = "Cargo.toml", kind = "file" }]
