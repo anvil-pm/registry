@@ -2,6 +2,8 @@ name: Update Manifest
 
 on:
   push:
+    branches:
+      - main
     paths:
       - "project-types/**"
       - "toolchains/**"
