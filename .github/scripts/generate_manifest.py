@@ -76,7 +76,8 @@ for toolchain_dir in sorted((ROOT / "toolchains").iterdir()):
   entry["name"] = tc["name"]
   entry["version"] = tc["version"]
   entry["project_type"] = tc["project_type"]
-  entry["description"] = tc["description"]
+  if "description" in tc:
+    entry["description"] = tc["description"]
   entry["files"] = files
 
   toolchains.append(entry)
