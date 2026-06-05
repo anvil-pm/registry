@@ -3,6 +3,13 @@ version = "1"
 updated_at = "2026-06-05"
 
 [[project_types]]
+id = "node"
+name = "Node"
+version = "0.0.1"
+file = "project-types/node.toml"
+sha256 = "965e1ef860148b4e33bb0c382878b8f9c0b114372dd6cbd664a55bfbefaf11bf"
+
+[[project_types]]
 id = "rust"
 name = "Rust"
 version = "0.0.1"
