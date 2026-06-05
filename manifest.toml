@@ -7,14 +7,14 @@ id = "node"
 name = "Node"
 version = "0.0.1"
 file = "project-types/node.toml"
-sha256 = "965e1ef860148b4e33bb0c382878b8f9c0b114372dd6cbd664a55bfbefaf11bf"
+sha256 = "0ab9166ebaeb17bdc09cc01b420bdd88971136eae08c7623b41dae816f470686"
 
 [[project_types]]
 id = "rust"
 name = "Rust"
 version = "0.0.1"
 file = "project-types/rust.toml"
-sha256 = "4f73c50927a32ccffc8840caddc82d2b63c54da27f3980640c365f4bd1105668"
+sha256 = "82dd6da2492d592b7a10b3fae348f2a6eaaf4d3a9eb979915d9a4b3ae40c8c26"
 
 [[toolchains]]
 id = "rust-workspace"
